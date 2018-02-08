@@ -43,7 +43,7 @@ public class NetflixLoginPage {
 		  @Test
 		  public void testUntitled2() throws Exception {
 		    driver.get(baseUrl + "/");
-		    //driver.manage().window().maximize().
+		    driver.manage().window().maximize().
 		    AssertJUnit.assertEquals("Netflix - Watch TV Shows Online, Watch Movies Online", driver.getTitle());
 		    driver.findElement(By.linkText("Sign In")).click();
 		    AssertJUnit.assertEquals("Netflix", driver.getTitle());
